@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device,initial-scale=1.0"/>
+</head>
+<body>
+
+     <canvas id="exer1" width="1900" height="945" style="border:1px solid #000000;">
+	 </canvas>
+	 <script>
+	     var c=document.getElementById("exer1");
+		 var ctx=c.getContext("2d");
+		     
+			 //Fundo azul
+			 ctx.fillStyle="#120949";
+			 ctx.fillRect(1, 1, 8000, 8000);
+			 
+			 //Plataforma1
+			 ctx.fillStyle="#663300";
+			 ctx.fillRect(1, 650, 650, 8000);
+			 
+			 //Plataforma3
+			 ctx.fillStyle="#663300";
+			 ctx.fillRect(1100, 650, 6500, 8000);
+			 
+			 //Plataforma2
+			 ctx.fillStyle="#663300";
+			 ctx.fillRect(800, 670, 100, 8000);
+			 
+			 //Grama1
+			 ctx.fillStyle="#006600";
+			 ctx.fillRect(1, 650, 650, 30);
+			 
+			 //Grama3
+			 ctx.fillStyle="#006600";
+			 ctx.fillRect(1100, 650, 6500, 30);
+			 
+			 //Grama2
+			 ctx.fillStyle="#006600";
+			 ctx.fillRect(800, 670, 100, 30);
+			 
+			 //Base da ponte Direita
+			 ctx.fillStyle="#d3a27f";
+			 ctx.fillRect(636, 555, 15, 110);
+			 
+			 //Base da ponte Esquerda
+			 ctx.fillStyle="#d3a27f";
+			 ctx.fillRect(1100, 555, 15, 110);
+			 
+			 ctx.beginPath();
+			 ctx.moveTo(650, 560);
+			 ctx.lineTo(1100, 560);
+			 ctx.arc(1100, 560, 180, Math.PI, 1.5 * Math.Pi, false);
+			 ctx.lineWidth = 2; 
+			 ctx.strokeStyle="#9999CC";
+			 ctx.stroke();
+			 
+			 ctx.fillStyle="";
+			 ctx.fillRect(650, 1100, 100, 100);
+			 
+	 </script>
+	
+	
+</body>
+</html>
