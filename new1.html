@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device,initial-scale=1.0"/>
+</head>
+<body>
+     <canvas id="exer1" width="1900" height="945" style="border:1px solid #000000;">
+	 </canvas>
+	 <script>
+	     var c=document.getElementById("exer1");
+		 var ctx=c.getContext("2d");
+		     
+			 //Fundo azul
+			 ctx.fillStyle="#120949";
+			 ctx.fillRect(1, 1, 8000, 8000);
+			 
+			 //Plataforma1
+			 ctx.fillStyle="#663300";
+			 ctx.fillRect(1, 650, 650, 8000);
+			 
+			 //Plataforma3
+			 ctx.fillStyle="#663300";
+			 ctx.fillRect(1100, 650, 6500, 8000);
+			 
+			 //Plataforma2
+			 ctx.fillStyle="#663300";
+			 ctx.fillRect(800, 670, 100, 8000);
+			 
+			 //Grama1
+			 ctx.fillStyle="#006600";
+			 ctx.fillRect(1, 650, 650, 30);
+			 
+			 //Grama3
+			 ctx.fillStyle="#006600";
+			 ctx.fillRect(1100, 650, 6500, 30);
+			 
+			 //Grama2
+			 ctx.fillStyle="#006600";
+			 ctx.fillRect(800, 670, 100, 30);
+			 
+			 //Base da ponte Direita
+			 ctx.fillStyle="#d3a27f";
+			 ctx.fillRect(636, 555, 15, 110);
+			 
+			 //Base da ponte Esquerda
+			 ctx.fillStyle="#d3a27f";
+			 ctx.fillRect(1100, 555, 15, 110);
+			 
+			 //linha da ponte 
+			 ctx.moveTo(636, 570);
+			 ctx.lineTo(1115, 570);
+			 ctx.strokeStyle="White";
+			 ctx.stroke();
+			 
+			 //linha da ponte2
+			 ctx.moveTo(650, 570);
+			 ctx.lineTo(700, 650);
+			 ctx.lineTo(750, 570);
+			 ctx.lineTo(800, 650);
+			 ctx.lineTo(850, 570);
+			 ctx.lineTo(900, 650);
+			 ctx.lineTo(950, 570);
+			 ctx.lineTo(1000, 650);
+			 ctx.lineTo(1050, 570);
+			 ctx.lineTo(1100, 650);
+			 ctx.strokeStyle="White";
+			 ctx.stroke();
+
+
+		         //base da ponte
+		         ctx.fillstyle="#A0522D";
+		         ctx.fillRect(630, 650, 490, 40);
+
+		         //estrutura da casa
+		         ctx.fillStyle="#
+		         ctx.fillReact(1650, 200, 900, 450);
+		 
+		        //escada1
+		        ctx.fillStyle="#363636";
+		        ctx.fillReact(1600, 600, 300, 50);
+
+		        //escada2
+		        ctx.fillStyle="#363636";
+		        ctx.fillReacdt(1555, 620, 40, 30);
+
+		        //porta
+		        ctx.fillStyle="#7B68EE";
+		        ctx.fillReact(1645, 400, 80, 200);
+
+		        //maçaneta
+		        ctx.beginPath();
+		        ctx.arc(1650, 500, 10, 0, 2 * Math.PI, false);
+		        ctx.lineWidth = 2;
+		        ctx.fillStyle = "#F0F8FF";
+		        ctx.fill();
+
+		        //telhado
+		        ctx.beginPath();
+		        ctx.moveTo(1600, 200);
+		        ctx.lineTo(1800, 100);
+		        ctx.lineTo(2000, 200);
+		        ctx.lineTo(1600, 200);
+		        ctx.strokeStyle="#800000";
+		        ctx.stroke();
+
+
+	 </script>
+
+
+</body>
+</html> 
