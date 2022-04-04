@@ -9,11 +9,39 @@
 	 </canvas>
 	 <script>
 	     var c=document.getElementById("exer1");
-		 var ctx=c.getContext("2d");
+             var ctx=c.getContext("2d");
 		     
 			 //Fundo azul
-			 ctx.fillStyle="#120949";
-			 ctx.fillRect(1, 1, 8000, 8000);
+			 var grd=ctx.createLinearGradient(0,0,0,1200);
+                         grd.addColorStop(0,"#191970");
+                         grd.addColorStop(1,"#4169E1");
+                         ctx.fillStyle=grd;
+                         ctx.fillRect(0,0,8000,8000);
+		     
+			 //montanhas da frente
+		         //1
+                         ctx.beginPath();
+		         ctx.moveTo(1, 650);
+		         ctx.lineTo(1, 300);
+		         ctx.lineTo(250, 650);
+		         //2
+		         ctx.moveTo(400, 280);
+		         ctx.lineTo(600, 650);
+		         ctx.lineTo(5, 650);
+			 //3
+			 ctx.moveTo(700, 350);
+			 ctx.lineTo(1200, 800);
+			 ctx.lineTo(70, 1000);
+			 //4
+			 ctx.moveTo(1100, 280);
+			 ctx.lineTo(1300, 950);
+			 ctx.lineTo(200, 1000);
+			 //5
+			 ctx.moveTo(1500, 280);
+			 ctx.lineTo(1900, 900);
+			 ctx.lineTo(700, 650);
+			 ctx.fillStyle="#000000";
+                         ctx.fill();
 			 
 			 //Plataforma1
 			 ctx.fillStyle="#663300";
@@ -103,6 +131,48 @@
 		        ctx.lineTo(1600, 200);
 		        ctx.strokeStyle="#800000";
 		        ctx.stroke();
+		 
+		        //mar
+			//1
+			var img=new Image();
+	                img.onload=function(){
+                        ctx.drawImage(img, 650, 650, 150, 400);
+                        };
+                        img.src= 'img/mar.png';
+			 
+			//2
+			var img=new Image();
+	                img.onload=function(){
+                        ctx.drawImage(img, 900, 650, 200, 400);
+                        };
+                        img.src= 'img/mar.png';
+			 
+			//lua
+			ctx.beginPath();
+		        ctx.arc(140, 200, 70, 90, 2 * Math.PI, true);
+		        ctx.lineWidth = 2;
+		        ctx.fillStyle = "#DCDCDC";
+		        ctx.fill();
+			 
+			//Boneco
+			//camisa
+			ctx.fillStyle = "#FF0000";
+			ctx.fillRect(290, 555, 20, 70);
+			//short
+			ctx.fillStyle = "#D2691E";
+			ctx.fillRect(290, 600, 20, 40);
+			//cabeça
+			ctx.beginPath();
+		        ctx.arc(300, 540, 20, 20, 2 * Math.PI, true);
+		        ctx.lineWidth = 2;
+		        ctx.fillStyle = "#D2B48C";
+		        ctx.fill();
+			//braço
+			ctx.fillStyle = "#FF0000";
+			ctx.fillRect(287, 560, 10, 40);
+			//tenis
+			ctx.fillStyle = "#363636";
+			ctx.fillRect(287, 640, 30, 20);
 
 
 	 </script>
